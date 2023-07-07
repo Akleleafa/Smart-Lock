@@ -1,0 +1,101 @@
+{
+  "items": [
+    {
+      "key": "$base-border-radius",
+      "value": "6px"
+    },
+    {
+      "key": "$datagrid-columnchooser-item-color",
+      "value": "rgba(74, 75, 77, 1)"
+    },
+    {
+      "key": "$datagrid-columnchooser-font-weight",
+      "value": "bold"
+    },
+    {
+      "key": "$datagrid-row-alternation-bg",
+      "value": "rgba(247, 125, 32, 0.06)"
+    },
+    {
+      "key": "$datagrid-hover-bg",
+      "value": "rgba(76, 105, 252, 0.37)"
+    },
+    {
+      "key": "$loadindicator-bg",
+      "value": "rgba(255, 131, 36, 1)"
+    },
+    {
+      "key": "$toast-info-bg",
+      "value": "rgba(65, 138, 240, 1)"
+    },
+    {
+      "key": "$datagrid-selection-bg",
+      "value": "rgba(254, 114, 48, 1)"
+    },
+    {
+      "key": "$datagrid-row-focused-bg",
+      "value": "rgba(254, 114, 48, 1)"
+    },
+    {
+      "key": "$datagrid-link-color",
+      "value": "rgba(254, 114, 48, 1)"
+    },
+    {
+      "key": "$tabs-tab-hover-bg",
+      "value": "rgba(254, 114, 48, 1)"
+    },
+    {
+      "key": "$tabs-focused-border-color",
+      "value": "rgba(254, 114, 48, 1)"
+    },
+    {
+      "key": "$button-default-bg",
+      "value": "rgba(50, 114, 252, 1)"
+    },
+    {
+      "key": "$button-default-border-color",
+      "value": "rgba(50, 114, 252, 1)"
+    },
+    {
+      "key": "$button-normal-border-color",
+      "value": "rgba(254, 114, 48, 1)"
+    },
+    {
+      "key": "$button-group-normal-selected-color",
+      "value": "rgba(254, 114, 48, 1)"
+    },
+    {
+      "key": "$button-normal-color",
+      "value": "rgba(3, 0, 0, 1)"
+    },
+    {
+      "key": "$button-group-normal-selected-bg",
+      "value": "rgba(255, 255, 255, 1)"
+    },
+    {
+      "key": "$button-normal-bg",
+      "value": "rgba(255, 255, 255, 1)"
+    },
+    {
+      "key": "$button-danger-bg",
+      "value": "rgba(235, 0, 0, 1)"
+    },
+    {
+      "key": "$accordion-item-focused-border-color",
+      "value": "rgba(254, 114, 48, 1)"
+    },
+    {
+      "key": "$accordion-icon-active-color",
+      "value": "rgba(254, 114, 48, 1)"
+    },
+    {
+      "key": "$accordion-item-hover-bg",
+      "value": "rgba(254, 114, 48, 0.12)"
+    }
+  ],
+  "baseTheme": "generic.carmine",
+  "outputColorScheme": "light-generic-tai",
+  "makeSwatch": false,
+  "version": "20.2.4",
+  "widgets": []
+}

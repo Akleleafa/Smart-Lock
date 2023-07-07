@@ -1,0 +1,457 @@
+﻿html,
+body {
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#taiapp_container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#taiapp_toolbar {
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: rgb(255, 102, 0, 0.2);
+}
+#taiapp_toolbar .dx-button-content .dx-icon {
+  color: rgb(255, 102, 0);
+}
+#taiapp_toolbar .dx-toolbar-before {
+  padding-left: 10px;
+}
+#taiapp_toolbar .dx-toolbar-after {
+  padding-right: 10px;
+}
+
+#taiapp_drawer {
+  overflow: hidden;
+}
+
+#taiapp_drawer .dx-overlay-content {
+  background: white;
+}
+/* #taiapp_drawer .dx-list-group-header {
+  border-bottom: 1px solid #dddddd;
+} */
+/* #taiapp_drawer .dx-drawer-panel-content {
+  border-right: 1px solid #e0e0e0;
+}  */
+#taiapp_drawer .dx-drawer-content {
+  background-color: #fafafa;
+}
+
+.SPA-page {
+  display: none;
+}
+
+#home {
+  background-color: dimgray;
+}
+#home::before {
+  content: "";
+  background-image: url("../img/homepage_tothetop.jpg");
+  background-size: cover;
+  background-position: center;
+  top: 0px;
+  position: absolute;
+  opacity: 0.5;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+#home-message {
+  font-size: 5.2vmax;
+  letter-spacing: 0px;
+  color: white;
+  position: absolute;
+  font-weight: 500;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  white-space: pre-wrap;
+}
+
+#taiapp_content {
+  height: calc(100vh - 3rem);
+}
+#taiapp_content .SPA-active {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0.4rem;
+}
+
+#taiapp_content .SPA-active > .dx-toolbar {
+  background-color: #ffffff;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgb(240, 240, 240);
+  z-index: 10;
+}
+
+#taiapp_content .SPA-active .content-wrapper {
+  height: 100%;
+  display: flex;
+  overflow-y: auto;
+}
+
+/* Eliminado el manrgin de la card para evitar overflow */
+.dx-card {
+  margin: 0;
+}
+
+.container-box {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  background-color: #ffffff;
+  padding: 2rem;
+  width: 100%;
+  height: 85vh;
+}
+
+.container-box:hover {
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+  #taiapp_content .tai-function-container {
+    overflow-y: scroll;
+  }
+}
+
+/* -------------------------- CSS GLOBAL -------------------------*/
+
+:root {
+  --background-color-custom: rgb(255, 250, 248);
+  --background-color-secundary-custom: rgb(255, 229, 219);
+  --border-secundary-custom: 1px solid #ff771d;
+  --border-custom: 1px solid rgb(218, 218, 218);
+  --white-custom: white;
+  --black-custom: rgb(66, 66, 66);
+  --color-title-custom: rgb(255, 157, 101);
+  --box-shadow-custom: -26px -7px 27px -17px rgba(0, 0, 0, 0.1);
+  --box-shadow-custom-right: 10px 0 5px -2px rgba(0, 0, 0, 0.1);
+}
+
+.text-head {
+  font-size: larger;
+  font-weight: 700;
+  color: var(--black-custom);
+  margin: 0;
+}
+
+#taiapp_content .SPA-active {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0rem;
+}
+
+.content-function-app {
+  height: calc(100%);
+}
+
+.content-layout {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  box-shadow: var(--box-shadow-custom);
+}
+
+.container-app {
+  display: flex;
+  align-items: center;
+  margin: 0 4rem 0 0;
+  height: 95%;
+}
+
+.container-app .dx-layout-manager .dx-field-item {
+  padding: 0;
+}
+
+.container-app
+  .dx-field-item:not(.dx-field-item-has-group):not(.dx-field-item-has-tabs):not(.dx-first-row):not(.dx-label-v-align) {
+  padding: 0;
+}
+
+.title-function {
+  color: var(--color-title-custom);
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  margin: 2rem;
+  text-align: center;
+}
+.contain-toolbarSide {
+  box-shadow: var(--box-shadow-custom);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25vw;
+  height: 95%;
+}
+
+.contain-widget {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 300px;
+}
+
+.taiapp-widge {
+  background-color: var(--white-custom);
+  width: 50%;
+  height: 10vh;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  border: var(--border-custom);
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  position: relative;
+}
+
+.taiapp-widge .textFuct {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--black-custom);
+  font-weight: bold;
+}
+
+.taiapp-widge .textAdd {
+  font-size: 3rem;
+  color: var(--black-custom);
+  font-weight: 400;
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.taiapp-widge .fa-icon {
+  font-size: 1.5rem;
+  margin: 0;
+  color: var(--black-custom);
+}
+
+.taiapp-widge:hover {
+  background-color: var(--background-color-secundary-custom);
+}
+
+.count {
+  font-size: 1.5rem;
+  color: var(--black-custom);
+  font-weight: bold;
+  text-align: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.textF {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--black-custom);
+  font-weight: bold;
+  text-align: center;
+}
+
+.taiapp-widge .widge-mod {
+  position: relative;
+}
+
+.widge-mod .select-text-count {
+  font-size: 12pt;
+  font-weight: 700;
+  margin: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--bs-orange);
+  transition: all 0.2s ease-out;
+}
+
+.widge-mod .reset-button {
+  font-size: 10pt;
+  font-weight: 400;
+  margin-bottom: 5px;
+  margin-left: 5px;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+}
+
+.widge-mod .reset-button:hover {
+  background-color: var(--background-color-custom);
+  border: var(--border-secundary-custom);
+}
+
+.closeSelectItem {
+  display: none;
+  transition: all 0.2s ease-out;
+}
+
+/* -------------------------- MEDIA QUERY -------------------------*/
+
+@media (min-width: 340px) and (max-width: 768px) {
+
+  #taiapp_content .SPA-active .content-wrapper {
+    height: 100%;
+    display: inline-block;
+    overflow-y: auto;
+  }
+  
+  .content-layout {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    box-shadow: none;
+    /* border: 2px solid rgb(255, 251, 0); */
+
+  }
+  .container-app {
+    margin: 0;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .container-box {
+    background-color: #ffffff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    height: auto;
+  }
+
+  .contain-toolbarSide {
+    box-shadow: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin-top: 1rem;
+  }
+
+  .contain-widget {
+    margin: 1rem;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .widge-mod .select-text-count {
+    font-size: 10pt;
+    margin: 1px;
+  }
+  
+  .widge-mod .reset-button {
+    margin-bottom: 1px;
+    margin-left: 3px;
+    padding: 0;
+  }
+  .title-function {
+    margin: 2rem auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  
+}
+
+@media (min-width: 992px) and (max-width: 2000px){
+  
+}
+
+/* -------------------------- POPUP CUSTOM -------------------------*/
+
+.customPopup > .dx-overlay-content {
+  border-radius: 0.3rem;
+}
+
+.customPopup > .dx-overlay-content .dx-popup-content {
+  margin: 2rem auto;
+}
+
+.customPopup > .dx-overlay-content .dx-popup-content .dx-button {
+  margin: 1rem auto;
+  width: 100%;
+}
+
+/* -------------------------- CSS ++ DX ++ -------------------------*/
+
+.dx-datagrid-text-content {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.dx-toolbar-items-container {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.dx-datagrid-table {
+}
+
+.dx-datagrid-headers {
+  border-left: var(--border-custom);
+  border-right: var(--border-custom);
+  border-bottom: var(--border-secundary-custom);
+}
+
+.dx-datagrid {
+  background-color: var(--white-custom);
+}
+
+.dx-datagrid-header-panel {
+  background-color: var(--background-color-custom);
+  border: var(--border-custom);
+  padding: 1rem;
+}
+
+.dx-treelist-header-panel {
+  background-color: var(--background-color-custom);
+  border: var(--border-custom);
+  padding: 1rem;
+}
+
+.dx-treelist .dx-toolbar {
+  background-color: var(--background-color-custom);
+}
+
+.dx-datagrid .dx-toolbar {
+  background-color: var(--background-color-custom);
+}
+
+.dx-datagrid-headers .dx-datagrid-table .dx-row > td {
+  border: none;
+}
+
+.dx-datagrid-filter-row {
+  background-color: var(--white-custom);
+}
+
+.dx-datagrid-headers .dx-datagrid-table .dx-row > td {
+  border-bottom: none;
+}

@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "riot": "^7.1.0"
+  },
+  "name": "webapp-lokceriot",
+  "version": "1.0.0",
+  "main": "service-worker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
